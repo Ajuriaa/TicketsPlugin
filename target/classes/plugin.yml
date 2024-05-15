@@ -1,0 +1,26 @@
+name: Tickets
+version: '1.0-SNAPSHOT'
+main: org.wasalona.tickets.Ticket
+api-version: '1.16'
+load: STARTUP
+description: Plugin to buy train tickets for Lighman Currency coins
+author: Ajuuu
+website: wasalona.org
+commands:
+  ticket:
+    description: Primary command for tickets
+    usage: |
+      /tickets <option> - Buys the ticket amount for the specified option
+permissions:
+  tickets.*:
+    description: Gives access to all tickets commands
+    default: op
+    children:
+      tickets.buy: true
+      tickets.info: true
+  tickets.buy:
+    description: Allows the player to buy tickets
+    default: true
+  tickets.info:
+    description: Allows the player to see the ticket information
+    default: true
