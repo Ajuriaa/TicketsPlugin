@@ -58,30 +58,45 @@ public class BuyTickets {
         switch (option) {
             case 1:
                 for (ItemStack item : items) {
+                    if(item == null || item.getItemMeta() == null) {
+                        continue;
+                    }
                     if (item.getType() == Material.valueOf("LIGHTMANSCURRENCY_COIN_GOLD") && item.getAmount() >= 4) {
                         success = true;
                     }
                 }
             case 2:
                 for (ItemStack item : items) {
+                    if(item == null || item.getItemMeta() == null) {
+                        continue;
+                    }
                     if (item.getType() == Material.valueOf("LIGHTMANSCURRENCY_COIN_GOLD") && item.getAmount() >= 18) {
                         success = true;
                     }
                 }
             case 3:
                 for (ItemStack item : items) {
+                    if(item == null || item.getItemMeta() == null) {
+                        continue;
+                    }
                     if (item.getType() == Material.valueOf("LIGHTMANSCURRENCY_COIN_GOLD") && item.getAmount() >= 32) {
                         success = true;
                     }
                 }
             case 4:
                 for (ItemStack item : items) {
+                    if(item == null || item.getItemMeta() == null) {
+                        continue;
+                    }
                     if (item.getType() == Material.valueOf("LIGHTMANSCURRENCY_COIN_GOLD") && item.getAmount() >= 45) {
                         success = true;
                     }
                 }
             case 5:
                 for (ItemStack item : items) {
+                    if(item == null || item.getItemMeta() == null) {
+                        continue;
+                    }
                     if (item.getType() == Material.valueOf("LIGHTMANSCURRENCY_COIN_DIAMOND") && item.getAmount() >= 1) {
                         success = true;
                     }
