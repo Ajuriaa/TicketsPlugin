@@ -58,6 +58,7 @@ public final class Ticket extends JavaPlugin implements CommandExecutor, Listene
             player.sendMessage(ChatColor.AQUA + "3. " + ChatColor.GREEN + "10 Tickets - " + ChatColor.GOLD + "32 Gold Coins");
             player.sendMessage(ChatColor.AQUA + "4. " + ChatColor.GREEN + "15 Tickets - " + ChatColor.GOLD + "45 Gold Coins");
             player.sendMessage(ChatColor.AQUA + "5. " + ChatColor.GREEN + "30 Tickets - " + ChatColor.AQUA + "1  Diamond Coin");
+            player.sendMessage(ChatColor.GREEN + "Corre /ticket " + ChatColor.AQUA + "<option>" + ChatColor.GREEN + " para comprar esa cantidad.");
             return true;
         }
 

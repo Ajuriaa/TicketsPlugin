@@ -27,23 +27,23 @@ public class BuyTickets {
         switch (option) {
             case 1:
                 executeCommand("clear " + player.getName() + " lightmanscurrency:coin_gold 4");
-                executeCommand("scoreboard players add " + player.getName() + " mtr_balance 1");
+                executeCommand("scoreboard players add " + player.getName() + " mtr_balance 2");
                 return true;
             case 2:
                 executeCommand("clear " + player.getName() + " lightmanscurrency:coin_gold 18");
-                executeCommand("scoreboard players add " + player.getName() + " mtr_balance 5");
+                executeCommand("scoreboard players add " + player.getName() + " mtr_balance 10");
                 return true;
             case 3:
                 executeCommand("clear " + player.getName() + " lightmanscurrency:coin_gold 32");
-                executeCommand("scoreboard players add " + player.getName() + " mtr_balance 10");
+                executeCommand("scoreboard players add " + player.getName() + " mtr_balance 20");
                 return true;
             case 4:
                 executeCommand("clear " + player.getName() + " lightmanscurrency:coin_gold 45");
-                executeCommand("scoreboard players add " + player.getName() + " mtr_balance 15");
+                executeCommand("scoreboard players add " + player.getName() + " mtr_balance 30");
                 return true;
             case 5:
                 executeCommand("clear " + player.getName() + " lightmanscurrency:coin_diamond 1");
-                executeCommand("scoreboard players add " + player.getName() + " mtr_balance 30");
+                executeCommand("scoreboard players add " + player.getName() + " mtr_balance 60");
                 return true;
             default:
                 player.sendMessage(ChatColor.RED + "Invalid option.");
